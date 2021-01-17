@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardView"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                >
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pic"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/mainImageView"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_play"
+                        android:id="@+id/playButtonImage"/>
+
+                    <RelativeLayout
+                        android:id="@+id/relayoutLayoutDownloadBtn"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/image_bg"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_below="@id/mainImageView"
+                        android:layout_marginTop="25dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageViewShare"
+                            android:src="@drawable/ic_share"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_horizontal" />
+
+
+                        <ImageView
+                            android:id="@+id/imageViewDownload"
+                            android:layout_width="26dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/download_image" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

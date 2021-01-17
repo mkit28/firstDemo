@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">WS Downloader</string>
+    
+    <string name="Admob_App_Id">ca-app-pub-7258486000818488~4532401133</string>
+<!--    <string name="Admob_App_Id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <string name="AdUnit_Id">ca-app-pub-7258486000818488/3135558984</string>
+<!--    <string name="AdUnit_Id">ca-app-pub-3940256099942544/6300978111</string>-->
+</resources>
